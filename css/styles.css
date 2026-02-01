@@ -244,8 +244,12 @@ body {
    ============================================ */
 
 .page-2 {
-    padding: 20px;
-    padding-top: 60px;
+    padding: 16px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    min-height: 100vh;
+    min-height: 100dvh;
+    overflow-y: auto;
 }
 
 /* Sound Toggle */
@@ -343,13 +347,15 @@ body {
 /* Luna Container */
 .luna-container {
     justify-content: flex-start;
-    padding-top: 20px;
+    padding-top: 10px;
+    min-height: auto;
+    flex: none;
 }
 
 /* Header Text */
 .header-text {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .luna-title {
@@ -367,12 +373,12 @@ body {
 
 /* Cat Container */
 .cat-container {
-    width: 220px;
-    height: 220px;
+    width: 180px;
+    height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 15px auto;
+    margin: 10px auto;
     position: relative;
     /* Subtle pink glow behind cat */
     background: radial-gradient(circle, rgba(255, 182, 193, 0.2) 0%, transparent 70%);
@@ -407,9 +413,10 @@ body {
 .speech-bubble {
     background: var(--white);
     border-radius: 20px;
-    padding: 16px 24px;
-    margin: 10px auto 30px;
+    padding: 12px 20px;
+    margin: 8px auto 20px;
     max-width: 280px;
+    width: calc(100% - 32px);
     position: relative;
     box-shadow: 0 2px 10px var(--shadow);
     transition: opacity 0.4s ease;
@@ -485,8 +492,8 @@ body {
 .final-card {
     background: var(--white);
     border-radius: 20px;
-    padding: 24px 30px;
-    margin-top: 30px;
+    padding: 20px 16px;
+    margin: 20px auto;
     text-align: center;
     box-shadow: 0 4px 20px var(--shadow), 0 0 40px rgba(240, 98, 146, 0.15);
     border: 2px solid var(--pink-soft);
@@ -494,6 +501,9 @@ body {
     transform: translateY(30px) scale(0.95);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
     pointer-events: none;
+    max-width: 320px;
+    width: calc(100% - 32px);
+    word-wrap: break-word;
 }
 
 .final-card.visible {
@@ -509,10 +519,10 @@ body {
 }
 
 .final-title {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: var(--text-dark);
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .final-title span {
@@ -520,9 +530,9 @@ body {
 }
 
 .final-message {
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: var(--text-light);
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 /* ============================================
